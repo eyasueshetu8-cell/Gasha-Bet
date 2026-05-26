@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "const API_URL = "http://localhost:3000";
 
 // Toggle Modals (Open/Close)
 function toggleModal(id) {
