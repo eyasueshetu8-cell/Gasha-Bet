@@ -27,7 +27,6 @@
 </head>
 <body class="bg-page-blue font-sans overflow-x-hidden">
 
-    <!-- TOP HEADER -->
     <header class="bg-dark-navy text-white p-3 flex justify-between items-center sticky top-0 z-[100] shadow-md">
         <div class="flex items-center">
             <img src="logo.png" class="h-6 mr-2" onerror="this.style.display='none'">
@@ -46,10 +45,8 @@
         </div>
     </header>
 
-    <!-- MAIN PAGE CONTENT -->
     <div id="home-page" class="game-grid pb-24"></div>
 
-    <!-- SIDEBAR MENU -->
     <div id="sidebar" class="fixed inset-y-0 right-0 w-80 bg-white z-[200] shadow-2xl translate-x-full">
         <div class="bg-dark-navy text-white p-4 flex justify-between items-center">
             <span class="font-bold text-sm tracking-widest uppercase">Menu</span>
@@ -93,7 +90,6 @@
         </div>
     </div>
 
-    <!-- LOGIN MODAL -->
     <div id="login-modal" class="hidden fixed inset-0 bg-black/70 z-[300] flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-md rounded shadow-2xl relative p-8">
             <button onclick="toggleModal('login-modal')" class="absolute top-4 right-5 text-3xl text-gray-300 hover:text-gray-600">&times;</button>
@@ -128,7 +124,6 @@
         </div>
     </div>
 
-    <!-- REGISTER MODAL -->
     <div id="register-modal" class="hidden fixed inset-0 bg-black/70 z-[300] flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-md rounded shadow-2xl relative p-8">
             <button onclick="toggleModal('register-modal')" class="absolute top-4 right-5 text-3xl text-gray-300 hover:text-gray-600">&times;</button>
@@ -157,7 +152,6 @@
         </div>
     </div>
 
-    <!-- DEPOSIT METHOD SELECTOR -->
     <div id="deposit-methods-page" class="hidden fixed inset-0 bg-page-blue z-[150] overflow-y-auto">
         <header class="bg-dark-navy text-white p-4 flex items-center sticky top-0">
             <button onclick="showPage('home-page')" class="text-xl mr-4"><i class="fa-solid fa-arrow-left"></i></button>
@@ -185,7 +179,6 @@
         </div>
     </div>
 
-    <!-- DEPOSIT CONTENT PANES -->
     <div id="tele-dep" class="hidden fixed inset-0 bg-dark-navy z-[160] text-white p-4 overflow-y-auto">
         <button onclick="showPage('deposit-methods-page')" class="mb-4 text-xl"><i class="fa-solid fa-arrow-left"></i> Back</button>
         <div class="bg-card-blue p-6 rounded-2xl space-y-4 shadow-2xl">
@@ -216,7 +209,6 @@
         </div>
     </div>
 
-    <!-- WITHDRAWAL SECTIONS -->
     <div id="withdraw-methods-page" class="hidden fixed inset-0 bg-page-blue z-[150] overflow-y-auto">
         <header class="bg-dark-navy text-white p-4 flex items-center sticky top-0"><button onclick="showPage('home-page')" class="text-xl mr-4"><i class="fa-solid fa-arrow-left"></i></button><h1 class="text-sm font-bold uppercase flex-1 text-center pr-8">ወጪ አማራጮች</h1></header>
         <div class="p-6 space-y-6">
@@ -240,7 +232,8 @@
     </div>
 
     <script>
-        const API_URL = "https://gashabet.onrender.com"; 
+        // Updated configuration endpoint to link with your live Render backend
+        const API_URL = "https://deposit-xq4y.onrender.com"; 
 
         function initGrid() {
             const container = document.getElementById('home-page');
